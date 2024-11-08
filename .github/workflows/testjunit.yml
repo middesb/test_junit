@@ -1,0 +1,16 @@
+name: test junit results
+
+on: [push]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-results
+          path: data/report.xml
