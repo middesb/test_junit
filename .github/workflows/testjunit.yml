@@ -1,4 +1,4 @@
-name: test junit results
+name: test_junit_results
 
 on: [push]
 
