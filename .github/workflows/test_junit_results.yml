@@ -1,6 +1,6 @@
 name: test_junit_results
 
-on: [workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   build_and_test:
